@@ -1,0 +1,74 @@
+.imagem1{
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+}
+
+.imagem2{
+    display: inline-block;
+    width: 300px;
+
+}
+
+.imagem3{
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+}
+
+.imagem1:hover{
+    opacity: 0.5;
+}
+
+.imagem2:hover{
+    opacity: 0.5;
+}
+
+.imagem3:hover{
+    opacity: 0.5;
+}
+
+p{
+    font-weight: bold;
+}
+
+.opa1{
+    background-color: green;
+}
+
+.opa8{
+    background-color: green;
+    opacity: 0.8;  
+
+}
+.opa6{
+    background-color: green;
+    opacity: 0.6;  
+
+}
+.opa4{
+    background-color: green;
+    opacity: 0.4;  
+
+}
+.opa2{
+    background-color: green;
+    opacity: 0.2;  
+}
+
+.rgba8{
+    background-color: green;
+    opacity: 0.8;
+}
+.rgba6{
+    background-color: green;
+    opacity: 0.6;
+}
+.rgba4{
+    background-color: green;
+    opacity: 0.4;
+}
+.rgba2{
+    background-color: green;
+    opacity: 0.2;
+}

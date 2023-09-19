@@ -1,0 +1,15 @@
+body{
+    background-color: darkgrey;
+}
+.div1{
+    background-color: rgb(157, 175, 209);
+    span{
+        color: red;
+    }
+}
+.div2{
+    background-color:rgb(221, 134, 119);
+    span{
+        color: blue;
+    }
+}

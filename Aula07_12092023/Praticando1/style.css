@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(123, 210, 236);
+    background-image: url('https://static.wixstatic.com/media/9211f3_e375d06a284e4985b67a2a3d25fae386~mv2.png/v1/fill/w_560,h_906,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Gato%20PNG%20Transparente%20Sem%20Fundo.png');
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    background-size: 250px;
+    background-position: right bottom;
+}
+.secao1{
+    background-color: rgb(218, 124, 124);
+}
+.secao2{
+    color: blue;
+    background-color: rgb(68, 56, 56);
+    background-image: url('https://static.wixstatic.com/media/9211f3_e375d06a284e4985b67a2a3d25fae386~mv2.png/v1/fill/w_560,h_906,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Gato%20PNG%20Transparente%20Sem%20Fundo.png');
+    background-size: contain;
+}
+.secao3{
+    background-color: rgba(10, 233, 147, 0.486);
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(193, 237, 250);
+    h3{
+        text-align: center;
+    }
+}
+
+.box1{
+    font-size: 2vh;
+    width: 65%;
+    border: 1px solid black; 
+    background-color: rgb(240, 226, 206);
+}
+.box2{
+    width: 620px;
+    border: 1px solid black;
+    font-size: 14pt;
+    background-color: rgb(240, 226, 206);
+}

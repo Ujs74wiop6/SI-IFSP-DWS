@@ -1,0 +1,17 @@
+.secao1{
+    float: right;
+}
+
+.secao2{
+    float: left;
+}
+
+.secaoClear{
+    clear: left;
+}
+
+.margem{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+}

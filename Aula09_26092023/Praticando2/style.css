@@ -1,0 +1,40 @@
+.secao1{
+    width: 6vw;
+    height: 6vw;
+    background-color: green;
+    margin: 1vw;
+    float: right;
+}
+
+.secao2{
+    width: 22vw;
+    height: 6vw;
+    background-color: green;
+    margin: 1vw;
+    float: left;
+}
+
+.cx1{
+    clear: both;
+}
+
+.secao3{
+    width: 6vw;
+    height: 22vw;
+    float: left;
+    background-color: green;
+    margin: 1vw;
+    clear: both;
+}
+
+.secao4{
+    width: 6vw;
+    height: 22vw;
+    background-color: green;
+    margin: 1vw;
+    float: right;
+}
+
+.margem{
+    margin: 2vw;
+}

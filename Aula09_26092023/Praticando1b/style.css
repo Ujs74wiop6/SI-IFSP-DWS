@@ -1,0 +1,102 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.secaoHeader{
+    background-color: rgb(178, 245, 182);
+    border-bottom: 0.22vw solid rgb(14, 165, 25);
+}
+
+.secaoTitulo > h1{
+    font-size: 2vw;
+    margin: 0;
+    margin-left: 2vw;
+    padding-top: 1vw;
+}
+
+.secaoMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(110, 58, 158);
+    text-decoration: underline;
+    font-size: 1.4vw;
+}
+
+.secaoMain{
+    display: flex;
+    margin-left: 1vw;
+}
+
+.secaoConteudo{
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.secaoConteudo > h2{
+    font-size: 1.6vw;
+}
+
+.secaoCorpo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.secaoCorpo > div{
+    width: 7vw;
+    height: 5.7vw;
+    margin-right: 1.7vw;
+    margin-bottom: 0.7vw;
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border: 0.11vw solid black;
+    text-align: center;
+    line-height: 2.2vw;
+    font-size: 2.8vw;
+}
+
+.secaoCorpo > div > p{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.secaoLateral{
+    flex: 25%;
+    margin: 0;
+    padding: 1vw;
+    padding-bottom: 4vw;
+    border-left: 0.22vw solid rgb(14, 165, 25);
+}
+
+.secaoLateral > h2{
+    font-size: 1.6vw;
+    margin: 0;
+    margin-top: 0.4vw;
+    padding: 0;
+    text-align: center;
+}
+
+.secaoLateral > p{
+    font-size: 1.07vw;
+    text-indent: 2.2vw;
+    line-height: 2.1vw;
+    text-align: justify;
+}
+
+.secaoRodape{
+    font-size: 1.07vw;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(178, 245, 182);
+    border-top: 0.22vw solid rgb(14, 165, 25);
+    padding: 0.2vw;
+    text-align: center;
+    line-height: 0.15vw;
+}

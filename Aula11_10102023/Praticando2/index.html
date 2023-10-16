@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: rgb(2,0,36);
+      background: linear-gradient(45deg, rgb(65, 63, 110) 0%, rgb(99, 172, 132) 29%,rgb(54, 219, 39)) 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    button {
+      font-size: large;
+      padding: 2%;
+    }
+
+    input, textarea, select, button {
+      border-radius: 10px;
+    }
+
+    .linha {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1%;
+    }
+
+    .esquerda {
+      flex: 1;
+      text-align: right;
+      margin-right: 1%;
+    }
+
+    .direita {
+      flex: 1;
+      text-align: left;
+      margin-left: 1%;
+    }
+  </style>
+</head>
+<body>
+    <h1>Praticando 2 - Formulário HTML Estilizado</h1>
+
+    <form>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="nome">Nome</label>
+        </div>
+        <div class="direita">
+          <input type="text" name="nome" id="nome">
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="email">Email</label>
+        </div>
+        <div class="direita">
+          <input type="email" name="email" id="email" placeholder="seu@email.aqui">
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="carro">Marca de carro preferida</label>
+        </div>
+        <div class="direita">
+          <select>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="observacoes">Observações</label>
+        </div>
+        <div class="direita">
+          <textarea name="observacoes" id="observacoes"></textarea>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="linguagem">Linguagem Web favorita: </label>
+        </div>
+        <div class="direita">
+          <label>
+            <input type="radio" name="ling1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="100" alt="HTML Logo">
+          </label>
+          <label>
+            <input type="radio" name="ling2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" height="100">
+          </label>
+          <label>
+            <input type="radio" name="ling3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" height="100" alt="JavaScript Logo">
+          </label>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="filmes">Filmes que eu quero ver quando lançar:</label>
+        </div>
+        <div class="direita">
+          <input type="checkbox" name="filmes" id="avengers"><a href="link aqui...">Avengers: The Kang Dynasty</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="aquaman"><a href="link aqui...">Aquaman 2: O Reino Perdido</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="themarvels"><a href="link aqui...">The Marvels</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="deadpool"><a href="link aqui...">Deadpool 3</a></input>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <button type="submit">Enviar</button>
+        </div>
+        <div class="direita">
+          <button type="reset">Limpar</button>
+        </div>
+      </div>
+    </form>
+  <a href="../index.html">Voltar</a>
+</body>
+</html>

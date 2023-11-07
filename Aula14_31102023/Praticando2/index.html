@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h1>Praticando 2 - JavaScript - Mini Calculadora</h1><br>
+    
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="col">
+				<div class="mb-3">
+					<label for="n1" class="form-label">Número 1</label>
+					<input type="number" class="form-control" id="n1">
+				</div>
+			</div>
+			<div class="col">
+				<div class="mb-3">
+					<label for="n2" class="form-label">Número 2</label>
+					<input type="number" class="form-control" id="n2">
+				</div>
+			</div>
+			<div class="col">
+				<div class="mb-3">
+					<label for="result" class="form-label">Resultado</label>
+					<input type="number" class="form-control" id="result" disabled="true">
+				</div>
+			</div>
+			<div class="col">
+				<button id="div" onclick="limpar(n1, n2, result)" class="btn btn-primary">Limpar</button>
+			</div>
+			<div class="col">
+				<button id="soma" onclick="somar(n1, n2)" class="btn btn-primary">Soma</button>
+			</div>
+			<div class="col">
+				<button id="sub" onclick="subtrair(n1, n2)" class="btn btn-primary">Subtração</button>
+			</div>
+			<div class="col">
+				<button id="mul" onclick="multiplicar(n1, n2)" class="btn btn-primary">Multiplicação</button>
+			</div>
+			<div class="col">
+				<button id="div" onclick="dividir(n1, n2)" class="btn btn-primary">Divisão</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+	<br><a href="../index.html">Voltar</a>
+</body> 
+</html>

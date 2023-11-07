@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Menu - Atividades</h1>
-    <hr>
-    <center>
-        <h2>Fabricio Tiago Arantes</h2>
-        <br><a href="Aula02_15082023/index.html">Aula 02</a>
-        <br><a href="Aula03_19082023/index.html">Aula 03</a>
-        <br><a href="Aula05_29082023/index.html">Aula 05</a>
-        <br><a href="Aula07_12092023/index.html">Aula 07</a>
-        <br><a href="Aula08_19092023/index.html">Aula 08</a>
-        <br><a href="Aula09_26092023/index.html">Aula 09</a>
-        <br><a href="Aula11_10102023/index.html">Aula 11</a>
-        <br><a href="Aula13_24102023/index.html">Aula 13</a>
-	    <br><a href="Aula14_31102023/index.html">Aula 14</a>
-    </center>
-    </body>
+    <div class="container">
+        <h1 class="text-center">Menu - Atividades</h1>
+        <hr>
+
+        <div class="text-center">
+            <h2>Fabricio Tiago Arantes</h2><br>
+            <h3>DWS 1</h3>
+            <label for="aula-select">Selecione uma aula:</label>
+            <select style="max-width: 400px; margin: 0 auto;" id="aula-select" class="form-control">
+                <option value="Aula02_15082023/index.html">Aula 02</option>
+                <option value="Aula03_19082023/index.html">Aula 03</option>
+                <option value="Aula05_29082023/index.html">Aula 05</option>
+                <option value="Aula07_12092023/index.html">Aula 07</option>
+                <option value="Aula08_19092023/index.html">Aula 08</option>
+                <option value="Aula09_26092023/index.html">Aula 09</option>
+                <option value="Aula11_10102023/index.html">Aula 11</option>
+                <option value="Aula13_24102023/index.html">Aula 13</option>
+                <option value="Aula14_31102023/index.html">Aula 14</option>
+            </select>
+            <button id="go-button" class="btn btn-primary mt-3">Ir para a aula</button>
+        </div>
+        <div id="loading" class="text-center" style="display: none;">
+            <img src="https://www.souhibrido.com.br/wp-content/uploads/2018/03/artigo2.gif" height="100px" width="150px" alt="Carregando...">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js" ></script>
+</body>
 </html>

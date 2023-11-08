@@ -6,7 +6,7 @@ function desligaLampada(){
     }
 
     document.querySelector("#lampada").innerHTML = 
-    "<img width='180px' height='200px' src='/home/fabricio/Desktop/IFSP/Matriz/DW1S4/SI-IFSP-DWS/Aula15_07112023/img/lampada.png'/>";
+    "<img width='180px' height='200px' src='../img/lampada.png''/>";
     document.body.style.backgroundColor = "black";
 
     paragrafos = document.createElement("h2");
@@ -25,7 +25,7 @@ function ligaLampada(){
     }
 
     document.querySelector("#lampada").innerHTML = 
-    "<img width='180px' height='200px' src='/home/fabricio/Desktop/IFSP/Matriz/DW1S4/SI-IFSP-DWS/Aula15_07112023/img/lampada-acesa.png'/>";
+    "<img width='180px' height='200px' src='../img/lampada-acesa.png'/>";
     document.body.style.backgroundColor = "white";
 
     paragrafos = document.createElement("h2");

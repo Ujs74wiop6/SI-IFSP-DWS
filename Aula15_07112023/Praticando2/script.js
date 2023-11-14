@@ -12,15 +12,21 @@ function validarCampo(campo) {
     var spanRequired = campo.parentElement.querySelector('.span-required');
 
     if (campo.value === '') {
-        campo.style.borderColor = 'red';
-        spanRequired.innerHTML = 'Por favor escolha um ' + campo.name + ' 🚫';
-        spanRequired.innerHTML += '</br>';
+        if (campo.id === 'idade') {  // Mensagem específica para idade! (🚫 Escolha um idade)(✅ Escolha uma idade)
+            campo.style.borderColor = 'red';
+            spanRequired.innerHTML = 'Por favor escolha uma ' + campo.name + ' 🚫';
+            spanRequired.innerHTML += '</br>';
+        } else {
+            campo.style.borderColor = 'red';
+            spanRequired.innerHTML = 'Por favor escolha um ' + campo.name + ' 🚫';
+            spanRequired.innerHTML += '</br>';
+        }
     } else {
         campo.style.borderColor = 'green';
         spanRequired.innerHTML = campo.name + ' parece bom! ✅ ';
         spanRequired.innerHTML += '</br>';
     }
-}
+}       
 
 // Constantes (para pegar os id's dos elementos de maneira individual). Vãos ser usadas nas funções abaixo (com frequência)...
 

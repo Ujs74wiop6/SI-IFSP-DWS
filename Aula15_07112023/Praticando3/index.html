@@ -10,11 +10,36 @@
 
 <body>
     <h1>
-        Praticando 3
+        Praticando 3 - Mostrar/Esconder
     </h1>
-    <br>
 
-    <br><a href="../index.html">Voltar</a>
+    <style>
+        #botaoEsquerda {
+            float: left;
+        }
+    
+        #botaoDireita {
+            float: right;
+        }
+        .container {
+            width: 1000px;
+            height: 250px;
+            border: 1px solid #ccc;
+            padding: 104px;
+            text-align: center;
+            background-color: rgb(154, 189, 189);
+        }
+    </style>
+    
+    <button id="botaoEsquerda"onclick="btnMostrar()" class="btn btn-primary">Mostrar</button>
+    <button id="botaoDireita" onclick="btnEsconder()" class="btn btn-primary">Esconder</button>
+    </br>
+    <div id="minhaDiv">
+        <div class="container">
+            <h1>Meu DIV</h1>
+        </div>
+    </div>   
+    </br><a href="../index.html">Voltar</a>
     <script src="script.js"></script>
 </body>
 </html>

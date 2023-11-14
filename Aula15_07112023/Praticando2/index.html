@@ -10,9 +10,46 @@
 
 <body>
     <h1>
-        Praticando 2
+        Praticando 2 - Formulário com validação
     </h1>
     <br>
+
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
+
+    <form class="form" name="form" id="form">
+        <h2>Formulário</h2>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="inputs required" placeholder="Digite seu nome">
+            <span class="span-required"></span></br> 
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="inputs required" placeholder="Digite seu email">
+            <span class="span-required"></span></br>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" class="inputs required" placeholder="Digite seu telefone">
+            <span class="span-required"></span></br> 
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" class="inputs required" placeholder="Digite sua idade">
+            <span class="span-required"></span></br> 
+        </div>
+        <div>
+            <label for="observacao">Observação:</label>
+            <input type="text" id="observacao" name="observacao" class="inputs required" placeholder="Digite sua observação">
+            <span class="span-required"></span></br> 
+        </div>
+            <button id="div" onclick="btnLimpar()" class="btn btn-primary">Limpar</button>
+            <button id="div" onclick="btnEnviar()" class="btn btn-primary">Emviar</button>
+    </form>
 
     <br><a href="../index.html">Voltar</a>
     <script src="script.js"></script>

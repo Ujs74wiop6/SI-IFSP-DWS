@@ -1,0 +1,103 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <title>Inicio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </head>
+      <body>
+            <div class="container">
+              <h2>Formulário de Cadastro</h2><hr>
+        
+                <div class="row">
+                  <form class="col-8">
+
+                    <div>
+                      <label class="nome">Nome Completo</label><br>
+                      <input type="text" class="form-control" required="required" aria-label="First name">
+                    </div>
+
+                    <div class="row">            
+                      <div class="col-4">
+                        <label class="telefone">Telefone</label><br>
+                        <input type="text" id="telefone" class="form-control" required="required" placeholder="(DD)XXXXX-XXXX" 
+                               name="telefone" minlength="14" maxlength="14" 
+                               pattern="\(\d{2}\)\d{5}-\d{4}" 
+                               title="Digite o Telefone no formato: (DD)XXXXX-XXXX"/>                
+                      </div>
+
+                     <div class="col-8">
+                      <label class="email">Email</label><br>
+                      <input type="email" class="form-control" required="required" placeholder="Digite seu e-mail" 
+                             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                             title="Digite um endereço de e-mail válido, por exemplo, nome@gmail.com" />
+                      <small class="text-muted">Ex: "nome@gmail.com"</small>                      
+                     </div>  
+                    </div>  
+
+                     <div class="row">
+                      <div class="col-4">
+                        <label class="cpf">CPF</label><br>
+                        <input type="text" id="cpf" class="form-control" required="required"
+                          placeholder="XXX.XXX.XXX-XX" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" />
+                      </div>                      
+                
+                        <div class="col-4">
+                          <label class="data">Data de Nascimento</label><br>
+                          <input type="date" id="data" class="form-control" required="required" name="date" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy"
+                            pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"/>
+                       </div>
+                
+                       <div class="col-4">
+                        <label class="cep">CEP</label><br>
+                        <input type="text" id="cep" class="form-control" required="required" name="cep" 
+                               placeholder="XX.XXX-XXX" pattern="\d{2}\.\d{3}-\d{3}" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <label class="endereco">Endereço</label><br>
+                        <input type="text" required="required" class="form-control" placeholder="Rua, n° e bairro">
+                      </div>
+              
+                      <div class="col-4">
+                        <label for="cidade" class="cidade">Cidade</label><br>
+                        <select id="cidade" class="form-select" required>
+                          <option value="" disabled selected>[selecione]</option>
+                          <option value="1">Indiaporã</option>
+                          <option value="2">Votuporanga</option>
+                          <option value="3">Fernandópolis</option>
+                          <option value="4">Ouroeste</option>
+                        </select>
+                      </div>
+                    </div>  
+
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="foto">Foto de perfil</label>
+                        <input type="file" id="foto" required="required" class="form-control" accept="image/*">
+                      </div>
+  
+                    <div class="col-6">
+                      <label for="contrato">Contrato assinado (em PDF)</label>
+                      <input type="file" id="contrato" required="required" class="form-control" accept=".pdf">
+                      </div>
+                    </div>
+
+                    <div>
+                      <button class="btn btn-primary" type="submit">Cadastra</button>
+                      <button class="btn btn-warning" type="submit">Limpar</button>
+                    </div>
+                </form>
+                <div class="col-3" id="img">
+                  <img src="https://cdn.worldvectorlogo.com/logos/tux.svg" style="width: 500px; height: 500px;" 
+                  alt=" Imagem TUX link: https://cdn.worldvectorlogo.com/logos/tux.svg">
+                </div>
+              </div>  
+            </div> 
+           <script src="js/script.js"></script>
+           <a href="../../index.html">Voltar</a>
+        </body>
+    </html>

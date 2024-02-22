@@ -91,3 +91,7 @@ p {
   background-color: rgb(72, 166, 93); 
   color: white;
 }
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+{
+    "minimum-stability": "beta",
+    "require": {
+        "claudsonm/cep-promise-php": "^1.2",
+        "erusev/parsedown": "^1.8"
+    }
+}

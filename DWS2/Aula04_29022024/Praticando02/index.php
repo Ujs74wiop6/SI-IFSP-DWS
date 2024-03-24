@@ -9,7 +9,6 @@
 <body>
     <h1>Praticando - Caluladora de Média</h1>
     <hr>
-    </div>
     <div class="container">
     <form action="resultado.php" method="POST">
     <div class="row mb-3">
